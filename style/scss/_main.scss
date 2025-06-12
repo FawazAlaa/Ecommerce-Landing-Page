@@ -161,7 +161,7 @@ select {
 .hero {
     width: 1264px;
     height: 538px;
-    background: url(../assets/imgs/hero.jpg) no-repeat center center;
+    background: url(/Ecommerce-Landing-Page/assets/imgs/hero.jpg) no-repeat center center;
     background-size: cover;
     margin-left: 12px;
 }
@@ -260,15 +260,15 @@ select {
 
 
     &_fresh {
-        @include mixins.banner('../assets/imgs/banner-1.png.jpg');
+        @include mixins.banner('/Ecommerce-Landing-Page/assets/imgs/banner-1.png.jpg');
     }
 
     &_breakfast {
-        @include mixins.banner('../assets/imgs/banner-2.png.jpg');
+        @include mixins.banner('/Ecommerce-Landing-Page/assets/imgs/banner-2.png.jpg');
     }
 
     &_freshdiff {
-        @include mixins.banner('../assets/imgs/banner-3.png.jpg');
+        @include mixins.banner('/Ecommerce-Landing-Page/assets/imgs/banner-3.png.jpg');
     }
 
     button {
@@ -289,7 +289,7 @@ select {
 // section stay home
 
 .stay-home {
-  background: url(../assets/imgs/stay-home.jpg) no-repeat center center;
+  background: url(/Ecommerce-Landing-Page/assets/imgs/stay-home.jpg) no-repeat center center;
   background-size: cover;
   padding: 60px 30px;
 
