@@ -1,0 +1,57 @@
+@use 'variables';
+
+@mixin fontController($fontSize, $fontColor, $fontFamily) {}
+
+@mixin containerController($widthDim, $heightDim) {}
+
+@mixin category-container($width: 298px, $height: 451.8px, $padding: 31px) {
+    padding: $padding;
+    width: $width;
+    height: $height;
+    border: 1px solid variables.$border-color;
+
+    h2 {
+        font-family: 'Quicksand', sans-serif;
+        color: variables.$primary-font-color;
+        margin-bottom: 20.8px;
+    }
+
+    hr {
+        border: 1px solid variables.$hr-color;
+    }
+
+}
+
+@mixin sale-badge($color) {
+    background-color:$color;   
+    color: white;
+    padding: 4px 12px;
+    font-size: 14px;
+    border-radius: 999px 0px 999px 0px;
+}
+
+@mixin banner($background-img){
+    background-image: url($background-img);
+    background-size: cover;
+    background-position: center;
+    flex: 1 1 30%; 
+    min-width: 250px;
+    height: 237.48px;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+}
+
+@mixin featured($background-color){
+    background-color:$background-color;
+    width: 47%;
+    display: flex;
+    padding: 10px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

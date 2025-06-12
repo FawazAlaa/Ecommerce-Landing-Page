@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #FFFFFF;
+  color: #253D4E;
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: 600;
+  color: #253D4E;
+}
+
+h2 {
+  font-size: 24px;
+  color: #253D4E;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+}
+
+img {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #253D4E;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+select {
+  border: none;
+}
+
+.navbar form {
+  border: 1px solid #BCE3C9;
+  max-width: 700px;
+}
+.navbar form select {
+  width: 220px;
+  font-size: 14px;
+}
+.navbar .search-button {
+  color: #838383;
+}
+.navbar .location-icon i {
+  color: #B6B6B6;
+}
+.navbar .location-icon select {
+  color: #3BB77E;
+}
+.navbar a {
+  color: #7E7E7E;
+}
+.navbar a i {
+  color: #253D4E;
+}
+
+.second-nav_left {
+  padding: 10px;
+  background-color: #3BB77E;
+}
+.second-nav_left h3 {
+  color: #FFFFFF;
+}
+
+.nav li {
+  padding-right: 38px;
+}
+.nav a {
+  color: #253D4E;
+  font-weight: 500;
+  font-size: 16px;
+}
+.nav .nav-item--products a {
+  color: #3BB77E;
+}
+
+.second-nav_right h3 {
+  color: #3BB77E;
+}
+
+.Featured-Categories_item-burger {
+  background-color: #F2FCE4;
+  width: 47%;
+  display: flex;
+  padding: 10px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Featured-Categories_item-kiwi {
+  background-color: #FFFCEB;
+  width: 47%;
+  display: flex;
+  padding: 10px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.category-container {
+  padding: 31px;
+  width: 298px;
+  height: 451.8px;
+  border: 1px solid #ECECEC;
+}
+.category-container h2 {
+  font-family: "Quicksand", sans-serif;
+  color: #253D4E;
+  margin-bottom: 20.8px;
+}
+.category-container hr {
+  border: 1px solid #BCE3C9;
+}
+.category-container .category-item {
+  padding: 10px 19px;
+  border: 1px solid #F2F3F4;
+  margin-bottom: 15px;
+}
+.category-container .category-item_number {
+  background-color: #BCE3C9;
+  height: 24px;
+  width: 24px;
+}
+.category-container .category-item p {
+  color: #253D4E;
+}
+
+.hero {
+  width: 1264px;
+  height: 538px;
+  background: url(/assets/imgs/hero.jpg) no-repeat center center;
+  background-size: cover;
+  margin-left: 12px;
+}
+
+.hero-text {
+  width: 75%;
+}
+.hero-text h1 {
+  margin-top: 91px;
+  margin-bottom: 31px;
+}
+.hero-text h2 {
+  color: #7E7E7E;
+  margin-bottom: 65px;
+  font-size: 30px;
+}
+
+.product-container {
+  padding: 31px;
+  width: 298px;
+  height: 451.8px;
+  border: 1px solid #ECECEC;
+}
+.product-container h2 {
+  font-family: "Quicksand", sans-serif;
+  color: #253D4E;
+  margin-bottom: 20.8px;
+}
+.product-container hr {
+  border: 1px solid #BCE3C9;
+}
+
+.product-item {
+  margin-bottom: 15px;
+}
+.product-item_number {
+  background-color: #BCE3C9;
+  height: 24px;
+  width: 24px;
+}
+.product-item p {
+  color: #253D4E;
+}
+
+.product-item_hashedline {
+  width: 100%;
+  height: 1px;
+  border-top: 2px dotted #ccc;
+}
+
+.cards_menu {
+  margin-bottom: 30px;
+}
+.cards_menu a {
+  color: #253D4E;
+}
+
+.card_description {
+  width: 234px;
+  height: 400px;
+  border: 1px solid #F2F3F4;
+}
+
+.cardtag {
+  background-color: #F74B81;
+  color: white;
+  padding: 4px 12px;
+  font-size: 14px;
+  border-radius: 999px 0px 999px 0px;
+}
+
+.saletag {
+  background-color: #67BCEE;
+  color: white;
+  padding: 4px 12px;
+  font-size: 14px;
+  border-radius: 999px 0px 999px 0px;
+}
+
+.newtag {
+  background-color: #3BB77E;
+  color: white;
+  padding: 4px 12px;
+  font-size: 14px;
+  border-radius: 999px 0px 999px 0px;
+}
+
+.discounttag {
+  background-color: #F59758;
+  color: white;
+  padding: 4px 12px;
+  font-size: 14px;
+  border-radius: 999px 0px 999px 0px;
+}
+
+.addbtn {
+  background-color: #DEF9EC;
+  color: #3BB77E;
+  padding: 9px 20px;
+  border: none;
+}
+
+.banner {
+  margin-top: 37px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.banner_fresh {
+  background-image: url("/assets/imgs/banner-1.png.jpg");
+  background-size: cover;
+  background-position: center;
+  flex: 1 1 30%;
+  min-width: 250px;
+  height: 237.48px;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+}
+.banner_breakfast {
+  background-image: url("/assets/imgs/banner-2.png.jpg");
+  background-size: cover;
+  background-position: center;
+  flex: 1 1 30%;
+  min-width: 250px;
+  height: 237.48px;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+}
+.banner_freshdiff {
+  background-image: url("/assets/imgs/banner-3.png.jpg");
+  background-size: cover;
+  background-position: center;
+  flex: 1 1 30%;
+  min-width: 250px;
+  height: 237.48px;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+}
+.banner button {
+  margin-top: 0.5rem;
+  padding: 6px 16px;
+  background-color: #3BB77E;
+  border: none;
+  color: white;
+  border-radius: 999px;
+}
+
+.bannercontent {
+  width: 70%;
+}
+
+.stay-home {
+  background: url(/assets/imgs/stay-home.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 60px 30px;
+}
+.stay-home .stay-home-text {
+  width: 100%;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.stay-home .stay-home-text h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.stay-home .stay-home-text p {
+  color: #7E7E7E;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.stay-home .stay-home-text .input-group {
+  max-width: 500px;
+}
+.stay-home .stay-home-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.footer_info i {
+  color: #3BB77E;
+  padding-right: 9px;
+}
+
+.footer-bottom {
+  border-top: #BCE3C9 solid 1px;
+}
+.footer-bottom h3 {
+  font-size: 26px;
+  color: #3BB77E;
+}
+
+/*# sourceMappingURL=style.css.map */

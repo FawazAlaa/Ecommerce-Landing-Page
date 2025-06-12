@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commarce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style/dist/style.css">
+</head>
+
+<body>
+
+    <!-- main navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light py-2">
+        <div class="container d-flex justify-content-between align-items-center w-100">
+
+            <!-- Left: Hamburger icon (mobile only) -->
+            <button class="btn d-lg-none">
+                <i class="fa-solid fa-bars fs-4"></i>
+            </button>
+
+            <!-- Center: Logo (always visible) -->
+            <a class="navbar-brand mx-auto d-lg-none" href="#">
+                <img src="assets/imgs/Logo.svg" alt="Logo" height="40">
+            </a>
+
+            <!-- Right: Icons (always visible, stacked on mobile) -->
+            <div class="d-flex d-lg-none align-items-center">
+                <div class="position-relative me-3">
+                    <i class="fa-regular fa-heart fs-5 text-dark"></i>
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">4</span>
+                </div>
+                <div class="position-relative me-3">
+                    <i class="fa-solid fa-cart-shopping fs-5 text-dark"></i>
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">2</span>
+                </div>
+            </div>
+
+            <!-- Desktop only: Full layout (logo, search, location, etc.) -->
+            <div class="d-none d-lg-flex align-items-center w-100 justify-content-between">
+
+                <!-- Left: Logo -->
+                <a class="navbar-brand me-3 d-flex " href="#">
+                    <img src="assets/imgs/Header.svg" alt="">
+                    <img src="assets/imgs/Logo.svg" alt="Logo">
+                </a>
+
+                <!-- Center: Search form -->
+                <form class="d-flex align-items-center rounded px-2 p-2 flex-grow-1 mx-4">
+                    <select class="form-select border-0 me-2 fw-bold pe-3">
+                        <option selected>All Categories</option>
+                    </select>
+                    <input class="form-control border-0 me-2 search-button" type="search"
+                        placeholder="Search for items..." aria-label="Search">
+                    <button class="btn btn-outline border-0" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+
+                <!-- Right: Location + Icons -->
+                <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center border rounded location-icon me-3">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <select class="form-select border-0 location-btn">
+                            <option value="">Your Location</option>
+                        </select>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="me-3 text-dark"><i class="fa-regular fa-heart me-1"></i> Wishlist</a>
+                        <a href="#" class="me-3  text-dark"><i class="fa-solid fa-cart-shopping me-1"></i> Cart</a>
+                        <a href="#" class="text-dark"><i class="fa-regular fa-user me-1"></i> Account</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- second navbar -->
+    <nav class="second-nav border d-none d-lg-block">
+        <div class="container d-flex justify-content-between align-items-center w-100">
+
+            <div class="second-nav_left d-flex align-items-center justify-content-center rounded text-center">
+                <div class="pe-1 mb-0"><img src="assets/imgs/Icon.svg" alt="menu"></div>
+
+                <div class="d-flex align-items-center">
+                    <h3 class="pe-1 mb-0">সব ক্যাটেগরি ব্রাউজ করুন</h3>
+                    <img src="assets/imgs/arrowdown.svg" alt="">
+                </div>
+
+            </div>
+            <div>
+                <ul class="nav d-flex align-items-center justify-content-center">
+                    <li class="nav-item">
+
+                        <a class="nav-link active" aria-current="page" href="#"><img src="assets/imgs/hot.svg"
+                                alt="">Home</a>
+                    </li>
+                    <li class="nav-item nav-item--products">
+                        <a class="nav-link " href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <select name="" id="">
+                            <option value="">top</option>
+                        </select>
+                    </li>
+                    <li class="nav-item">
+                        <select name="" id="">
+                            <option value="">current</option>
+                        </select>
+                    </li>
+                    <li class="nav-item">
+                        <select name="" id="">
+                            <option value="">view</option>
+                        </select>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">recent</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center justify-content-center second-nav_right">
+                <div class="pe-1">
+                    <img src="assets/imgs/sales.svg" alt="">
+                </div>
+                <div class="mt-3 ">
+                    <h3 class="mb-0">লাইভ চ্যাট</h3>
+                    <p>24/7 Support Center</p>
+                </div>
+
+            </div>
+        </div>
+
+    </nav>
+    <!-- Featured-Categories_items mobile -->
+    <section class="Featured-Categories container d-block d-lg-none">
+        <h2>Featured Categories</h2>
+        <ul class="d-flex justify-content-between align-items-center px-0">
+            <li>Cake & Milk</li>
+            <li>Coffes & Teas</li>
+            <li class="text-success">Pet Foods</li>
+            <li> Vegetables</li>
+        </ul>
+        <div class="Featured-Categories_items d-flex justify-content-between align-items-center flex-wrap ">
+            <div class="Featured-Categories_item-burger rounded-4">
+                <div class="mb-3"><img src="assets/imgs/burger.svg" alt=""></div>
+                <h3>Cake & Milk</h3>
+                <p>26 items</p>
+            </div>
+            <div class="Featured-Categories_item-kiwi rounded-4">
+                <div class="mb-3"><img src="assets/imgs/kiwi.svg" alt=""></div>
+                <h3>Oganic Kiwi</h3>
+                <p>28 items</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="container my-5 d-none d-xl-flex px-0 justify-content-between align-items-stretch">
+        <!-- category container -->
+        <div class="category-container rounded-4 border  ">
+            <h2 class="fs-4 fw-bold category-title">Category</h2>
+            <hr class="">
+
+            <!-- grocery -->
+            <div class="category-item rounded-2 mt-4">
+                <div class="row d-flex align-itemscenter">
+                    <div class="category-item_icon col-3 d-flex align-items-center justify-content-center">
+                        <img src="./assets/imgs/category-1.svg" alt="grocery" class="object-fit-cover">
+                    </div>
+                    <div class="category-item_name col-7 d-flex align-items-center">
+                        <p class="mb-0">groceries</p>
+                    </div>
+                    <div
+                        class="category-item_number col-2 rounded-circle d-flex align-items-center justify-content-center">
+                        <p class="mb-0">3</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- grocery -->
+            <div class="category-item rounded-2">
+                <div class="row d-flex align-items-center">
+                    <div class="category-item_icon col-3 d-flex align-items-center justify-content-center">
+                        <img src="./assets/imgs/category-1.svg" alt="grocery" class="object-fit-cover">
+                    </div>
+                    <div class="category-item_name col-7 d-flex align-items-center">
+                        <p class="mb-0">groceries</p>
+                    </div>
+                    <div
+                        class="category-item_number col-2 rounded-circle d-flex align-items-center justify-content-center">
+                        <p class="mb-0">3</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- grocery -->
+            <div class="category-item rounded-2">
+                <div class="row d-flex align-items-center">
+                    <div class="category-item_icon col-3 d-flex align-items-center justify-content-center">
+                        <img src="./assets/imgs/category-1.svg" alt="grocery" class="object-fit-cover">
+                    </div>
+                    <div class="category-item_name col-7 d-flex align-items-center">
+                        <p class="mb-0">groceries</p>
+                    </div>
+                    <div
+                        class="category-item_number col-2 rounded-circle d-flex align-items-center justify-content-center">
+                        <p class="mb-0">3</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- grocery -->
+            <div class="category-item rounded-2">
+                <div class="row d-flex align-items-center">
+                    <div class="category-item_icon col-3 d-flex align-items-center justify-content-center">
+                        <img src="./assets/imgs/category-1.svg" alt="grocery" class="object-fit-cover">
+                    </div>
+                    <div class="category-item_name col-7 d-flex align-items-center">
+                        <p class="mb-0">groceries</p>
+                    </div>
+                    <div
+                        class="category-item_number col-2 rounded-circle d-flex align-items-center justify-content-center">
+                        <p class="mb-0">3</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- grocery -->
+            <div class="category-item rounded-2">
+                <div class="row d-flex align-items-center">
+                    <div class="category-item_icon col-3 d-flex align-items-center justify-content-center">
+                        <img src="./assets/imgs/category-1.svg" alt="grocery" class="object-fit-cover">
+                    </div>
+                    <div class="category-item_name col-7 d-flex align-items-center">
+                        <p class="mb-0">groceries</p>
+                    </div>
+                    <div
+                        class="category-item_number col-2 rounded-circle d-flex align-items-center justify-content-center">
+                        <p class="mb-0">3</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="hero  d-flex flex-column rounded-4 p-4">
+            <div class="hero-text">
+                <h1 class="fw-bold">"অবিশ্বাস্য গ্রোসারি ডিল মিস করবেন না"</h1>
+                <h2>Sign up for the daily newsletter</h2>
+            </div>
+            <div class="input-group rounded-pill overflow-hidden" style="max-width: 500px;">
+                <span class="input-group-text bg-white border-0 p-3">
+                    <i class="fa-regular fa-paper-plane text-muted"></i>
+                </span>
+                <input type="text" class="form-control border-0 p-2" placeholder="Your email address">
+                <button class="btn btn-success  p-2">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- New products -->
+    <section class="new-products container my-5 px-0 d-lg-flex justify-content-between align-items-start ">
+        <!-- LEFT: New Products -->
+        <div class="product-container d-none d-lg-block rounded-4 border me-4 ">
+            <h2 class="fs-4 fw-bold product-title">New products</h2>
+            <hr>
+            <!-- Product 1 -->
+            <div class="product-item rounded-2 mt-4">
+                <div class="row d-flex align-items-center">
+                    <div class="product-item_icon col-5 d-flex align-items-center justify-content-center">
+                        <img src="assets/imgs/thumbnail1.jpg.svg" alt="product" class="object-fit-cover">
+                    </div>
+                    <div class="product-item_text col-7 d-flex flex-column justify-content-center">
+                        <h3 class="mb-0">আমের জুস</h3>
+                        <p>$99.50</p>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </div>
+                </div>
+                <div class="product-item_hashedline mt-4"></div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-item rounded-2 mt-4">
+                <div class="row d-flex align-items-center">
+                    <div class="product-item_icon col-5 d-flex align-items-center justify-content-center">
+                        <img src="assets/imgs/thumbnail2.jpg.svg" alt="product" class="object-fit-cover">
+                    </div>
+                    <div class="product-item_text col-7 d-flex flex-column justify-content-center">
+                        <h3 class="mb-0">আনারস বল</h3>
+                        <p>$89.50</p>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </div>
+                </div>
+                <div class="product-item_hashedline mt-4"></div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-item rounded-2 mt-1">
+                <div class="row d-flex align-items-center">
+                    <div class="product-item_icon col-5 d-flex align-items-center justify-content-center">
+                        <img src="assets/imgs/thumbnail3.jpg.svg" alt="product" class="object-fit-cover">
+                    </div>
+                    <div class="product-item_text col-7 d-flex flex-column justify-content-center">
+                        <h3 class="mb-0">ডিমপাড়া</h3>
+                        <p>$25</p>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT: Popular Products menu -->
+        <div class="cards-wrapper w-100">
+            <!-- Top Tabs -->
+            <div class="cards_menu d-flex justify-content-between align-items-center mb-4">
+                <h2 class="fw-bold">Popular Products</h2>
+                <ul class="d-flex mb-0 ps-0">
+                    <li class="pe-3"><a href="#" class="text-success">All</a></li>
+                    <li class="pe-3"><a href="#">Milks & Dairies</a></li>
+                    <li class="pe-3"><a href="#">Coffes & Teas</a></li>
+                    <li class="pe-3"><a href="#">Pet Foods</a></li>
+                    <li class="pe-3"><a href="#">Meats</a></li>
+                    <li class="pe-3"><a href="#">Vegetables</a></li>
+                    <li><a href="#">Fruits</a></li>
+                </ul>
+            </div>
+
+            <!-- Product Cards -->
+            <div class="cards d-flex flex-column flex-lg-row flex-wrap gap-3  align-items-center">
+                <div class="card_description p-3 rounded-4 position-relative">
+                    <span class="cardtag position-absolute top-0 start-0">Hot</span>
+                    <!-- Repeatable product card -->
+                    <img src="assets/imgs/product-1.jpg.jpg" alt="product" class="img-fluid mb-2">
+                    <small class="text-muted">Snack</small>
+                    <h5 class="fw-bold my-1">Seeds of Change Organic Quinoa</h5>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <p class="mb-1">
+                        <span class="text-dark">by</span> <span class="text-success">NestFood</span>
+                    </p>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <span class="text-success fw-bold">$28.85</span>
+                        <span class="text-decoration-line-through">$30</span>
+
+                        <button class="btn addbtn btn-outline-success btn-sm"> <i class="fa-solid fa-cart-shopping pe-2"
+                                style="color: #3BB77E;"></i>Add</button>
+                    </div>
+                </div>
+
+                <div class="card_description p-3 rounded-4 position-relative">
+                    <span class="saletag position-absolute top-0 start-0">Hot</span>
+                    <!-- Repeatable product card -->
+                    <img src="assets/imgs/product-2.jpg.jpg" alt="product" class="img-fluid mb-2">
+                    <small class="text-muted">Hodo Foods</small>
+                    <h5 class="fw-bold my-1">All Natural Italian-Style
+                        Chicken Meatballs</h5>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <p class="mb-1">
+                        <span class="text-dark">by</span> <span class="text-success">Stouffer</span>
+                    </p>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <span class="text-success fw-bold">$52.85</span>
+                        <span class="text-decoration-line-through">$55.8</span>
+
+                        <button class="btn addbtn btn-outline-success btn-sm"> <i class="fa-solid fa-cart-shopping pe-2"
+                                style="color: #3BB77E;"></i>Add</button>
+                    </div>
+                </div>
+
+                <div class="card_description p-3 rounded-4 position-relative">
+                    <span class="newtag position-absolute top-0 start-0">Hot</span>
+                    <!-- Repeatable product card -->
+                    <img src="assets/imgs/product-3.jpg.jpg" alt="product" class="img-fluid mb-2">
+                    <small class="text-muted">Snack</small>
+                    <h5 class="fw-bold my-1">Angie’s Boomchickapop
+                        Sweet & Salty</h5>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <p class="mb-1">
+                        <span class="text-dark">by</span> <span class="text-success">StarKist</span>
+                    </p>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <span class="text-success fw-bold">$48.85</span>
+                        <span class="text-decoration-line-through">$52.8</span>
+
+                        <button class="btn addbtn btn-outline-success btn-sm"> <i class="fa-solid fa-cart-shopping pe-2"
+                                style="color: #3BB77E;"></i>Add</button>
+                    </div>
+                </div>
+                <!-- mobile only -->
+                <div class="card_description p-3  d-block d-lg-none rounded-4 position-relative">
+
+                    <img src="assets/imgs/product-4.jpg.jpg" alt="product" class="img-fluid mb-2">
+                    <small class="text-muted">Vegetables</small>
+                    <h5 class="fw-bold my-1">Foster Farms Takeout
+                        Crispy Classic</h5>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <p class="mb-1">
+                        <span class="text-dark">by</span> <span class="text-success">NestFood</span>
+                    </p>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <span class="text-success fw-bold">$17.85</span>
+                        <span class="text-decoration-line-through">$19.8</span>
+
+                        <button class="btn addbtn btn-outline-success btn-sm"> <i class="fa-solid fa-cart-shopping pe-2"
+                                style="color: #3BB77E;"></i>Add</button>
+                    </div>
+                </div>
+                <!-- mobile only -->
+                <div class="card_description p-3  d-block d-lg-none rounded-4 position-relative">
+
+                    <img src="assets/imgs/product-4.jpg.jpg" alt="product" class="img-fluid mb-2">
+                    <small class="text-muted">Vegetables</small>
+                    <h5 class="fw-bold my-1">Foster Farms Takeout
+                        Crispy Classic</h5>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <p class="mb-1">
+                        <span class="text-dark">by</span> <span class="text-success">NestFood</span>
+                    </p>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <span class="text-success fw-bold">$17.85</span>
+                        <span class="text-decoration-line-through">$19.8</span>
+
+                        <button class="btn addbtn btn-outline-success btn-sm"> <i class="fa-solid fa-cart-shopping pe-2"
+                                style="color: #3BB77E;"></i>Add</button>
+                    </div>
+                </div>
+                <!-- mobile only -->
+                <div class="card_description p-3  d-block d-lg-none rounded-4 position-relative">
+
+                    <img src="assets/imgs/product-4.jpg.jpg" alt="product" class="img-fluid mb-2">
+                    <small class="text-muted">Vegetables</small>
+                    <h5 class="fw-bold my-1">Foster Farms Takeout
+                        Crispy Classic</h5>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <p class="mb-1">
+                        <span class="text-dark">by</span> <span class="text-success">NestFood</span>
+                    </p>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <span class="text-success fw-bold">$17.85</span>
+                        <span class="text-decoration-line-through">$19.8</span>
+
+                        <button class="btn addbtn btn-outline-success btn-sm"> <i class="fa-solid fa-cart-shopping pe-2"
+                                style="color: #3BB77E;"></i>Add</button>
+                    </div>
+                </div>
+
+                <div class="card_description p-3 rounded-4 position-relative">
+                    <span class="discounttag position-absolute top-0 start-0">-14%</span>
+                    <!-- Repeatable product card -->
+                    <img src="assets/imgs/product-5.jpg.jpg" alt="product" class="img-fluid mb-2">
+                    <small class="text-muted">Pet Foods</small>
+                    <h5 class="fw-bold my-1">Blue Diamond Almonds
+                        Lightly</h5>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <p class="mb-1">
+                        <span class="text-dark">by</span> <span class="text-success">NestFood</span>
+                    </p>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <span class="text-success fw-bold">$23.85</span>
+                        <span class="text-decoration-line-through">$25.8</span>
+
+                        <button class="btn addbtn btn-outline-success btn-sm"> <i class="fa-solid fa-cart-shopping pe-2"
+                                style="color: #3BB77E;"></i>Add</button>
+                    </div>
+                </div>
+
+                <!-- Add more .card_description divs as needed -->
+            </div>
+            <div class="banner   ">
+                <div class="banner_fresh ">
+                    <div class="bannercontent">
+                        <h2>Everyday Fresh &
+                            Clean with Our
+                            Products</h2>
+                        <button>shop now</button>
+                    </div>
+                </div>
+                <div class="banner_breakfast">
+                    <div class="bannercontent">
+                        <h2>Everyday Fresh &
+                            Clean with Our
+                            Products</h2>
+                        <button>shop now</button>
+                    </div>
+                </div>
+                <div class="banner_freshdiff">
+                    <div class="bannercontent">
+                        <h2>Everyday Fresh &
+                            Clean with Our
+                            Products</h2>
+                        <button>shop now</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="stay-home container rounded-4 d-none d-lg-block">
+        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between">
+
+            <!-- Left Side -->
+            <div class="stay-home-text">
+                <h3 class="fw-bold">
+                    Stay home & get your daily <br /> needs from our shop
+                </h3>
+                <p>
+                    Start Your Daily Shopping with <span class="text-success fw-bold">Nest Mart</span>
+                </p>
+
+                <div class="input-group rounded-pill overflow-hidden bg-white shadow">
+                    <span class="input-group-text bg-white border-0 p-3">
+                        <i class="fa-regular fa-paper-plane text-muted"></i>
+                    </span>
+                    <input type="text" class="form-control border-0" placeholder="Your email address" />
+                    <button class="btn btn-success px-4">Subscribe</button>
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="stay-home-image mt-4 mt-lg-0">
+                <img src="assets/imgs/holding.svg" alt="Delivery" class="img-fluid" />
+            </div>
+
+        </div>
+    </section>
+    <!-- Main footer -->
+    <footer class=" footer container pt-5">
+        <div class="row">
+            <div class="col-12 col-lg-3 mb-4 footer_info">
+                <div class="d-flex mb-3"><img src="assets/imgs/Header.svg" alt="">
+                    <img src="assets/imgs/Logo.svg" alt="">
+                </div>
+                <p>Awesome grocery store website
+                    template</p>
+                <p><i class="fa-solid fa-location-dot "></i>Address: 5171 W Campbell Ave undefined Kent, Utah 53127
+                    United States</p>
+                <p> <i class="fa-solid fa-headphones "></i>Call Us:(+91) - 540-025-124553</p>
+                <p> <i class="fa-solid fa-paper-plane"></i>Email:sale@Nest.com</p>
+                <p> <i class="fa-solid fa-clock "></i>Hours:10:00 - 18:00, Mon - Sat</p>
+
+            </div>
+            <div class="col-12 col-lg-6 mb-4">
+                <div class="row">
+                    <div class=" col-6 col-lg-3 ps-0 mb-3 mb-lg-0">
+                        <h3 class="fs-3">Company</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#">About Us</a></li>
+                            <li class="mb-2"><a href="#">Delivery Information</a></li>
+                            <li class="mb-2"><a href="#">Privacy Policy</a></li>
+                            <li class="mb-2"><a href="#">Terms & Conditions</a></li>
+                            <li class="mb-2"><a href="#">Contact Us</a></li>
+                            <li class="mb-2"><a href="#">Support Center</a></li>
+                            <li class="mb-2"><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                        <h3 class="fs-3">Account</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#">Sign In</a></li>
+                            <li class="mb-2"><a href="#">View Cart</a></li>
+                            <li class="mb-2"><a href="#">My Wishlist</a></li>
+                            <li class="mb-2"><a href="#">Track My Order</a></li>
+                            <li class="mb-2"><a href="#">Help Ticket</a></li>
+                            <li class="mb-2"><a href="#">Shipping Details</a></li>
+                            <li class="mb-2"><a href="#">Compare products</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-lg-3 ">
+                        <h3 class="fs-3">Corporate</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#">Become a Vendor</a></li>
+                            <li class="mb-2"><a href="#">Affiliate Program</a></li>
+                            <li class="mb-2"><a href="#">Farm Business</a></li>
+                            <li class="mb-2"><a href="#">Farm Careers</a></li>
+                            <li class="mb-2"><a href="#">Our Suppliers</a></li>
+                            <li class="mb-2"><a href="#">Accessibility</a></li>
+                            <li class="mb-2"><a href="#">Promotions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-3 ">
+                        <h3 class="fs-3">Popular</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#">Milk & Flavoured Milk</a></li>
+                            <li class="mb-2"><a href="#">Butter and Margarine</a></li>
+                            <li class="mb-2"><a href="#">Eggs Substitutes</a></li>
+                            <li class="mb-2"><a href="#">Marmalades</a></li>
+                            <li class="mb-2"><a href="#">Sour Cream and Dips</a></li>
+                            <li class="mb-2"><a href="#">Tea & Kombucha</a></li>
+                            <li class="mb-2"><a href="#">Cheese</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 mb-4">
+                <h3 class="fs-3 mb-5">Install App</h3>
+                <div class="d-flex mb-5">
+                    <img class="me-3" src="assets/imgs/app-store.jpg.svg" alt="">
+                    <img src="assets/imgs/google-play.jpg.svg" alt="">
+                </div>
+                <p>Secured Payment Gateways</p>
+                <ul class="d-flex">
+                    <li class="pe-2">Follow us</li>
+                    <li><img src="assets/imgs/Link (1).svg" alt=""></li>
+                    <li><img src="assets/imgs/Link.svg" alt=""></li>
+                    <li><img src="assets/imgs/Link (2).svg" alt=""></li>
+                    <li><img src="assets/imgs/Link (3).svg" alt=""></li>
+                    <li><img src="assets/imgs/Link (4).svg" alt=""></li>
+                </ul>
+                <p class="mb-3 mb-lg-0">Up to 15% discount on your first subscribe</p>
+
+                <div class="d-block d-lg-none"><img src="assets/imgs/payment-method.png.svg" alt=""></div>
+
+            </div>
+        </div>
+    </footer>
+
+    <footer class="footer-bottom  container">
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <div>
+                <p class="mb-0">© 2022, <span class="text-success">Nest</span> - HTML Ecommerce Template</p>
+                <p>All rights reserved</p>
+            </div>
+
+            <ul class="d-lg-flex d-none mb-0 ps-0">
+                <li class="pe-3"><img src="assets/imgs/phone-call.svg fill.svg" alt=""></li>
+                <li class="pe-3">
+                    <h3>01234567</h3>
+                    <p>Working 8:00 - 22:00</p>
+                </li>
+                <li class="pe-3"><img src="assets/imgs/phone-call.svg fill.svg" alt=""></li>
+                <li class="pe-3">
+                    <h3>01234567</h3>
+                    <p>Working 8:00 - 22:00</p>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
